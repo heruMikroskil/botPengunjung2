@@ -91,11 +91,12 @@ async def main(nama, email, c):
 
 if __name__ == "__main__":
     jumlah = 500
-    mulaiDari = 0
+    mulaiDari = 500
     print("Mulai...")
     for i in range (mulaiDari, mulaiDari+jumlah):
         contact = contacts[i]
         nama = contact["nama"]
+        nama = nama[3:-3]
         email = contact["email"]
         c = i
         #print(f"Proses: {nama} ({email})")
